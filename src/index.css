@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer img {
+  max-width: 8%;
+  max-height: 8%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #afd0d6;
+}
+
+p {
+  line-height: 1.75;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  padding: 17px;
+}
+
+h2 {
+  text-align: center;
+  padding: 15px;
+}
+
+.button {
+  text-align: center;
+}
+
+.button .btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #384e77;
+  background-color: #384e77;
+  color: #fff;
+}
+
+.meals article {
+  display: grid;
+  padding: 0 50px;
+}
+
+.meals article h3 {
+  margin-top: 30px;
+}
+
+@media (min-width: 640px) {
+  .meals article {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .meals article h2 {
+    text-align: left;
+  }
+
+  .meals article h3 {
+    font-size: 25px;
+  }
+
+  .meals article p {
+    font-size: 20px;
+  }
+}
